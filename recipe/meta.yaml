@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - openmm >=7.5.0
+    - openmm >=7.4.2
     - pyyaml
     - ambertools >=20.0
     - lxml
@@ -51,3 +51,4 @@ extra:
     - jaimergp
     - jchodera
     - peastman
+    - mikemhenry
