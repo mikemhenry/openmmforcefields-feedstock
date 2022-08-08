@@ -1,5 +1,5 @@
 {% set name = "openmmforcefields" %}
-{% set version = "0.11.0" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openmm/openmmforcefields/archive/{{ version }}.tar.gz
-  sha256: 175a293b88cebeb012beaacb8aa73f2ac677cd7a132205a8997f044a43276f44
+  sha256: 22a201ee31c2e3f35dda9937aa87ef279aa96f4d8fd73f63c656774a202b4aa0
 
 build:
   noarch: python
@@ -53,3 +53,4 @@ extra:
     - jchodera
     - peastman
     - mikemhenry
+    - ijpulidos
