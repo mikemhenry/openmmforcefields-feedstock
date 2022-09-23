@@ -1,5 +1,5 @@
 {% set name = "openmmforcefields" %}
-{% set version = "0.11.1" %}
+{% set version = "0.11.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,32 +7,40 @@ package:
 
 source:
   url: https://github.com/openmm/openmmforcefields/archive/{{ version }}.tar.gz
-  sha256: 22a201ee31c2e3f35dda9937aa87ef279aa96f4d8fd73f63c656774a202b4aa0
+  sha256: 89888ec81f539323fcf8fba8403adfa40c483f16b978b5861f65afaabe3b2615
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.8
     - pip
   run:
-    - python >=3.6
+    - python >=3.8
     - openmm >=7.6.0
     - pyyaml
     - ambertools >=20.0
     - lxml
     - networkx
     - tinydb
-    - openff-toolkit >=0.9.0,<0.11.0
-    - openff-forcefields >=1.2.0
     - validators
+    - openff-toolkit >=0.9.0
+
+  run_constrained:
+    - openforcefield =9999999999999
 
 test:
+  requires:
+    - openff-toolkit >=0.11.0
   imports:
     - openmmforcefields
+  files:
+    - test_generators.py
+  commands:
+    - python test_generators.py
 
 about:
   home: http://openmm.org/
@@ -54,3 +62,4 @@ extra:
     - peastman
     - mikemhenry
     - ijpulidos
+    - mattwthompson
