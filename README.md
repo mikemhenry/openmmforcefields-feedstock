@@ -1,11 +1,11 @@
-About openmmforcefields
-=======================
+About openmmforcefields-feedstock
+=================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmmforcefields-feedstock/blob/main/LICENSE.txt)
 
 Home: http://openmm.org/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openmmforcefields-feedstock/blob/main/LICENSE.txt)
 
 Summary: Extra support for additional forcefields in OpenMM
 
@@ -155,6 +155,7 @@ Feedstock Maintainers
 * [@ijpulidos](https://github.com/ijpulidos/)
 * [@jaimergp](https://github.com/jaimergp/)
 * [@jchodera](https://github.com/jchodera/)
+* [@mattwthompson](https://github.com/mattwthompson/)
 * [@mikemhenry](https://github.com/mikemhenry/)
 * [@peastman](https://github.com/peastman/)
 
