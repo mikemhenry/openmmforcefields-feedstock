@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv --no-deps
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
     - python >=3.8
     - openmm >=7.6.0
     - pyyaml
-    - ambertools >=20.0
+    - ambertools >=20.0,<23
     - lxml
     - networkx
     - tinydb
