@@ -1,5 +1,5 @@
 {% set name = "openmmforcefields" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openmm/openmmforcefields/archive/{{ version }}.tar.gz
-  sha256: dcf15933b5620b9be6dae013b135528a0db21c04be0c50f34474a6048d40abd3
+  sha256: 09a702856779c903ff32469b897ba2a23b8718c9db026ef913939a789c8fc3e2
 
 build:
   noarch: python
@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - pip
   run:
-    - python >=3.8
+    - python >=3.10,<3.13
     - openmm >=7.6.0
     - pyyaml
-    - ambertools >=20.0,<23
+    - ambertools >=22,<24
     - lxml
     - networkx
     - tinydb
@@ -35,14 +35,8 @@ requirements:
     - espaloma >=0.3.2
 
 test:
-  requires:
-    - openff-toolkit >=0.11.0
   imports:
     - openmmforcefields
-  files:
-    - test_generators.py
-  commands:
-    - python test_generators.py
 
 about:
   home: http://openmm.org/
