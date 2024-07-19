@@ -1,5 +1,5 @@
 {% set name = "openmmforcefields" %}
-{% set version = "0.13.0" %}
+{% set version = "0.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.10,<3.13
-    - openmm >=7.6.0
+    - openmm >=8.1.2
     - pyyaml
     - ambertools >=22,<24
     - lxml
