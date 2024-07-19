@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.10,<3.13
-    - openmm >=8.1.2
+    - openmm ~=8.1.2
     - pyyaml
     - ambertools >=22,<24
     - lxml
