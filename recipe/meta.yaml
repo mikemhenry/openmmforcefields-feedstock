@@ -37,6 +37,11 @@ requirements:
 test:
   imports:
     - openmmforcefields
+  requires:
+    - pytest
+    - pytest-xdist
+  commands:
+    - pytest -v -n logical --pyargs openmmforcefields
 
 about:
   home: http://openmm.org/
