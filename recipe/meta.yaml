@@ -1,5 +1,5 @@
 {% set name = "openmmforcefields" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/openmm/openmmforcefields/archive/{{ version }}.tar.gz
-  sha256: 751b078ca68aae682ad41c8289b331721677214dde1480667e21d691bcf3fc90
+  sha256: 058a74a31da3e6442ba77444217e028debee255d3ca8bc924a9a5107f594bff1
 
 build:
   noarch: python
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.10,<3.13
-    - openmm ~=8.1.2
+    - openmm >=7.6.0
     - pyyaml
     - ambertools >=22,<24
     - lxml
