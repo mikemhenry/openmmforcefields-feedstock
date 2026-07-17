@@ -14,7 +14,7 @@ source:
   sha256: 0961e2176173824a597afeaddda39077726c4ca9271fcf540252b0852e7fdeff
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps
 
@@ -25,7 +25,7 @@ requirements:
     - setuptools
   run:
     - importlib_resources
-    - ambertools >=22,<25
+    - ambertools >=22,<27
     - lxml
     - numpy
     - openff-interchange >=0.4  # if we need 0.3, can relax later
