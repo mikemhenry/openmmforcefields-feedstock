@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://github.com/openmm/openmmforcefields/archive/${{ version }}.tar.gz
-  sha256: 0961e2176173824a597afeaddda39077726c4ca9271fcf540252b0852e7fdeff
+  sha256: 703f1341569ec691c0af20b134bd0fc7b00b6c4049fd90ad1c1728630e7c1d99
 
 build:
   number: 1
